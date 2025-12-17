@@ -107,10 +107,11 @@ body { background-color: #f5f5f5; }
 </div>
 
 <script>
-document.querySelectorAll('.toggle-password').forEach(icon => {
-    icon.addEventListener('click', () => {
-        const input = icon.previousElementSibling;
-        input.type = input.type === 'password' ? 'text' : 'password';
+document.querySelectorAll('.toggle-password').forEach(icon=>{
+    icon.addEventListener('click',()=>{
+        const input=icon.previousElementSibling;
+        if(input.type==='password') input.type='text';
+        else input.type='password';
         icon.classList.toggle('bi-eye');
         icon.classList.toggle('bi-eye-slash');
     });

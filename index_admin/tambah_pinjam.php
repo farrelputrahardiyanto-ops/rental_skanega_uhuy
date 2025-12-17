@@ -1,6 +1,6 @@
 <?php 
-include 'config/koneksi.php';
-include 'templates/header.php'; 
+include '../config/koneksi.php';
+include '../templates/header.php';
 ?>
 
 <h4>Tambah Pinjaman</h4>
@@ -84,4 +84,4 @@ include 'templates/header.php';
 
 </form>
 
-<?php include 'templates/footer.php'; ?>
+<?php include '../templates/footer.php'; ?>

@@ -1,6 +1,6 @@
 <?php
-include 'config/koneksi.php';
-include 'templates/header.php';
+include '../config/koneksi.php';
+include '../templates/header.php';
 
 $stmt = $pdo->query("SELECT * FROM kendaraan");
 ?>
@@ -9,7 +9,8 @@ $stmt = $pdo->query("SELECT * FROM kendaraan");
 <?php while ($k = $stmt->fetch()) { ?>
     <div class="col-md-3 mb-4">
         <div class="card shadow-sm">
-            <img src="<?= $k['kendaraan_img']; ?>" class="card-img-top">
+            <img src="../<?= $k['kendaraan_img']; ?>" class="card-img-top">
+
 
             <div class="card-body">
                 <h6 class="fw-bold"><?= $k['kendaraan_nama']; ?></h6>
@@ -21,7 +22,7 @@ $stmt = $pdo->query("SELECT * FROM kendaraan");
 
                 <?php if ($k['kendaraan_status'] == 'tersedia') { ?>
                     <a href="sewa.php?id=<?= $k['kendaraan_nomer']; ?>" 
-                       class="btn btn-sewa w-100">
+                       class="btn btn-info w-100">
                         Sewa
                     </a>
                 <?php } else { ?>
@@ -35,4 +36,4 @@ $stmt = $pdo->query("SELECT * FROM kendaraan");
 <?php } ?>
 </div>
 
-<?php include 'templates/footer.php'; ?>
+<?php include '../templates/footer.php'; ?>

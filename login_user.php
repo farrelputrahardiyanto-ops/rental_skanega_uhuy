@@ -24,7 +24,7 @@ body { background-color: #f5f5f5; }
                 Sistem Informasi Rental Kendaraan<br>RPL Skanega
             </h5>
 
-            <form method="post" action="rental_skanega/login_user_process.php">
+            <form method="post" action="login_user_process.php">
                 <label class="form-label">Username</label>
                 <input type="text" name="username" class="form-control form-control-sm mb-2" required>
 

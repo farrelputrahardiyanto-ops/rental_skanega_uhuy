@@ -1,5 +1,5 @@
 <?php
-include 'templates/header.php';
+include '../templates/header.php';
 ?>
 
 <h4 class="mb-3">Tambah User</h4>
@@ -65,4 +65,4 @@ function togglePassword() {
 }
 </script>
 
-<?php include 'templates/footer.php'; ?>
+<?php include '../templates/footer.php'; ?>

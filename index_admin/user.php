@@ -1,6 +1,6 @@
 <?php
-include 'config/koneksi.php';
-include 'templates/header.php';
+include '../config/koneksi.php';
+include '../templates/header.php';
 
 $stmt = $pdo->query("SELECT * FROM user");
 ?>
@@ -48,4 +48,4 @@ $stmt = $pdo->query("SELECT * FROM user");
     </tbody>
 </table>
 
-<?php include 'templates/footer.php'; ?>
+<?php include '../templates/footer.php'; ?>

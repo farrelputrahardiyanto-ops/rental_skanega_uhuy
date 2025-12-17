@@ -1,7 +1,7 @@
 <?php
 session_start();
-if (!isset($_SESSION['admin_id'])) {
-    header("Location: ../login.php");
+if (!isset($_SESSION['user_id'])) {
+    header("Location: ../login_user.php");
     exit;
 }
 ?>
@@ -57,8 +57,6 @@ if (!isset($_SESSION['admin_id'])) {
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item"><a class="nav-link" href="index.php"><i class="bi bi-house-door"></i> Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="user.php"><i class="bi bi-people"></i> User</a></li>
-                <li class="nav-item"><a class="nav-link" href="kendaraan.php"><i class="bi bi-bicycle"></i> Kendaraan</a></li>
                 <li class="nav-item"><a class="nav-link" href="pinjam.php"><i class="bi bi-receipt"></i> Sewa</a></li>
                 <li class="nav-item"><a class="nav-link" href="../logout.php"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
             </ul>

@@ -1,5 +1,5 @@
 <?php
-include 'config/koneksi.php';
+include '../config/koneksi.php';
 
 $id       = $_POST['user_id'];
 $nama     = $_POST['user_nama'];

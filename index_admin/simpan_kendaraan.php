@@ -1,5 +1,5 @@
 <?php
-include 'config/koneksi.php';
+include '../config/koneksi.php';
 
 $nama   = $_POST['nama'];
 $kendaraan_nomor = $_POST['nopol'];

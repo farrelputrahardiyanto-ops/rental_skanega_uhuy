@@ -1,6 +1,6 @@
 <?php
-include 'config/koneksi.php';
-include 'templates/header.php';
+include '../config/koneksi.php';
+include '../templates/header.php';
 
 $id = $_GET['id'];
 
@@ -69,4 +69,4 @@ $k = $stmt->fetch();
 
 </form>
 
-<?php include 'templates/footer.php'; ?>
+<?php include '../templates/footer.php'; ?>

@@ -1,6 +1,6 @@
 <?php 
-include 'config/koneksi.php';
-include 'templates/header.php'; 
+include '../config/koneksi.php';
+include '../templates/header_user.php'; 
 
 // Ambil ID pinjam dari URL
 if(!isset($_GET['id'])){
@@ -86,4 +86,4 @@ if(!$pinjam){
 
 </form>
 
-<?php include 'templates/footer.php'; ?>
+<?php include '../templates/footer.php'; ?>

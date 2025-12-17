@@ -1,5 +1,5 @@
 <?php
-include 'config/koneksi.php';
+include '../config/koneksi.php';
 
 if(!isset($_GET['id'])){
     header("Location: pinjam.php");

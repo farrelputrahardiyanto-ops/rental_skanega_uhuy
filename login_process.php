@@ -21,9 +21,8 @@ if ($admin && $password === $admin['password']) {
     $_SESSION['email']     = $admin['email'];
     $_SESSION['role']      = 'admin';
     
-    // Redirect ke index.php dalam folder rental_skanega
-    header("Location: index.php");  // pastikan index.php ada di folder yang sama
-    exit;
+   header("Location: index_admin/index.php");
+   exit;
 } else {
     echo "<script>
             alert('Email atau password salah!');

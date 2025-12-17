@@ -1,6 +1,6 @@
 <?php
-include 'config/koneksi.php';
-include 'templates/header.php';
+include '../config/koneksi.php';
+include '../templates/header.php';
 
 // Ambil data pinjam beserta info kendaraan dan user
 $stmt = $pdo->query("
@@ -76,4 +76,4 @@ $stmt = $pdo->query("
   </div>
 </div>
 
-<?php include 'templates/footer.php'; ?>
+<?php include '../templates/footer.php'; ?>

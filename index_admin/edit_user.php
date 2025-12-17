@@ -1,6 +1,6 @@
 <?php
-include 'config/koneksi.php';
-include 'templates/header.php';
+include '../config/koneksi.php';
+include '../templates/header.php';
 
 $id = $_GET['id'];
 $stmt = $pdo->prepare("SELECT * FROM user WHERE user_id=?");
@@ -70,4 +70,4 @@ function togglePassword() {
 }
 </script>
 
-<?php include 'templates/footer.php'; ?>
+<?php include '../templates/footer.php'; ?>

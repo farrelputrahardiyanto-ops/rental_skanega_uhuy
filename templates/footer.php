@@ -3,12 +3,12 @@
 <footer class="bg-dark text-light py-4 mt-auto w-100">
     <div class="container text-center">
         <div class="mb-2">
-            <a href="https://instagram.com/USERNAME_IG" target="_blank"
+            <a href="https://www.instagram.com/pngng_mch?igsh=azNxdjBncDRtZmEy" target="_blank"
                class="text-light me-3 text-decoration-none">
                 <i class="bi bi-instagram"></i> Instagram
             </a>
 
-            <a href="https://github.com/USERNAME_GITHUB" target="_blank"
+            <a href="https://github.com/farrelputrahardiyanto-ops" target="_blank"
                class="text-light text-decoration-none">
                 <i class="bi bi-github"></i> GitHub
             </a>
